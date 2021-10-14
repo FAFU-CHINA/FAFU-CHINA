@@ -1,0 +1,14 @@
+clc,clear,close all;
+time = xlsread('C:\Users\jxLiang\Desktop\Growth curve\~.xlsx','~');
+a = xlsread('C:\Users\jxLiang\Desktop\Growth curve\~.xlsx','~');
+Rt=tiedrank(a); 
+n=length(a); t=1:n; 
+Qs=1-6/(n*(n^2-1))*sum((t-Rt).^2);  
+T=Qs*sqrt(n-2)/sqrt(1-Qs^2);  
+t_0=tinv(0.975,n-2);     
+b=diff(a);   
+m=ar(b,2,'ls'); 
+bhat=predict(m,b');  
+bhat(end+1)=forecast(m,b',1); 
+ahat=[a(1), a+bhat'];  
+delta=abs((ahat(1:end-1)-a)./a);  

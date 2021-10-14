@@ -1,0 +1,17 @@
+clc,clear,close all;
+time = xlsread('C:\Users\jxLiang\Desktop\Growth curve\~.xlsx','A2:A30');
+x1 = xlsread('C:\Users\jxLiang\Desktop\Growth curve\~.xlsx','B2:B30');
+grid on;
+grid minor;
+createFit(time,x1);
+hold on;
+x2 = xlsread('C:\Users\jxLiang\Desktop\Growth curve\~.xlsx','C2:C30');
+grid on;
+grid minor;
+createFit(time,x2);
+hold on;
+x3 = xlsread('C:\Users\jxLiang\Desktop\Growth curve\~.xlsx','D2:D30');
+grid on;
+grid minor;
+createFit(time,x3);
+hold on;
