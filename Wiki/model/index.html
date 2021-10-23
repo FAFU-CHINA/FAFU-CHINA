@@ -1,0 +1,1412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/Math model/index.css">
+    <!-- <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/nav_pad.css">
+    <link rel="stylesheet" href="../css/nav_min.css"> -->
+    <link rel="stylesheet" href="../css/nav2.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/footer_pad.css">
+
+    <script src="../js/flexible.js"></script>
+    <script src="../js/jquery-1.11.2.min.js"></script>
+    <script src="../js/myjs.js"></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="jdt"></div>
+        <section class="navigation">
+            <div class="nav-container">
+                <div class="brand logo">
+                    <a href="#!">
+                        <img src="images/logo.png" alt="">
+                    </a>
+                </div>
+                <nav>
+                    <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+                    <ul class="nav-list">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#!">Services</a>
+                            <ul class="nav-dropdown">
+                                <li>
+                                    <a href="#!">Web Design</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Web Development</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Graphic Design</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#!">Project </a>
+                            <ul class="nav-dropdown">
+                                <li>
+                                    <a href="#!">Description </a>
+                                </li>
+                                <li>
+                                    <a href="#!">Design</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Model</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Proof of Concept</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Hardware </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#!">Lab</a>
+                            <ul class="nav-dropdown">
+                                <li>
+                                    <a href="#!">Notebook </a>
+                                </li>
+                                <li>
+                                    <a href="#!">Experiments </a>
+                                </li>
+                                <li>
+                                    <a href="#!">Safety </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#!">Team </a>
+                            <ul class="nav-dropdown">
+                                <li>
+                                    <a href="#!">Team Members</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Attributions</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Collaborations  </a>
+                                </li>
+                                <li>
+                                    <a href="#!">Partnership  </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#!">Parts</a>
+                            <ul class="nav-dropdown">
+                                <li>
+                                    <a href="#!">Parts </a>
+                                </li>
+                                <li>
+                                    <a href="#!">Contributions  </a>
+                                </li>
+                                <li>
+                                    <a href="#!">Engineering Success</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#!">Human Practices </a>
+                            <ul class="nav-dropdown">
+                                <li>
+                                    <a href="#!">Overview </a>
+                                </li>
+                                <li>
+                                    <a href="#!">Silver  </a>
+                                </li>
+                                <li>
+                                    <a href="#!">Gold </a>
+                                </li>
+                                <li>
+                                    <a href="#!">Proposed Implementation</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Education and Communication</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#!">Awards</a>
+
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </header>
+
+
+    <div class="addSpace"></div>
+    <!-- sidebar！ -->
+    <div id="sideBar" class="sideBar_Hide">
+        <a href="#"> Back to the top </a>
+        <a href="#Kinetic-based_biochemical_reaction_model"> Kinetic-based biochemical reaction model </a>
+        <a href="#Protein_modeling"> Protein modeling </a>
+        <a href="#Aroma_diffusion_simulation"> Aroma diffusion simulation </a>
+
+    </div>
+    <!-- sidebar end！ -->
+
+    <!-- body content ! -->
+    <section class="sub_banner">
+        <div class="mask_text">Modeling</div>
+        <img src="../images/banner2.jpg" alt="">
+    </section>
+    <section class="main_content">
+        <div class="contentWrapper">
+            <h4>Mathematical modeling</h4>
+            <h3>1 Kinetic-based biochemical reaction model</h3>
+            <a href="" id=" Kinetic-based_biochemical_reaction_model" style="position: relative; top: -200px;"></a>
+            <h3>1.1.1 Introduction</h3>
+            <p>We develop a single-cell regulatory model that mainly consists of ordinary differential equations (ODE),
+                and assume that genes encoding different synthases have the same expression rates. So we have the
+                following series of reaction equations：</p>
+            <figure style="display: flex; justify-content: center; align-items: center;">
+                <img src="https://2021.igem.org/wiki/images/0/0e/T--FAFU-CHINA--7-1.png" alt="" style="width: 80%;;">
+
+            </figure>
+            <p>
+                $$
+                \begin{aligned}
+                &\frac{d\left[m R N A_{\text {PlacUV5 }}\right]}{d t}=\text { copynumber } \cdot k_{T}-\left[m R N A_{P
+                l a c U V
+                5}\right] \cdot k_{I D I-m R N A} \ \\
+                &\frac{d[\text { enzyme }]}{d t}=k_{T} \cdot\left[m R N A_{\text {PlacUV } 5}\right]-[\text { enzyme }]
+                \cdot
+                k_{\text {dil-enzyme }} \ \\
+                &=\frac{d[E R G 10]}{d t}=\frac{d[E R G 13]}{d t}=\frac{d[t H M G R]}{d t}=\frac{d[R p H M G R]}{d t} \
+                \\
+                &=\frac{d[E R G 12]}{d t}=\frac{d[E R G 8]}{d t}=\frac{d[E R G 9]}{d t}=\frac{d[A c N E S 1]}{d
+                t}=\frac{d[B T S
+                1]}{d t} \\\
+                &=\frac{d[\text { Nerolidol }]}{d t}
+                \end{aligned}
+                $$
+            </p>
+
+
+            <p>The above-mentioned ordinary differential equation (ODE system) refers to the synthesis of some key
+                enzymes that catalyze a variety of biological reactions. kdil-mRNA and kdil-enzyme are the dilution rate
+                constants of mRNA and synthetase, respectively. is the constant transcription rate of DNA, and is the
+                translation rate constant of mRNA. The statistical number of plasmids carrying this operation in a
+                single bacterial cell is copynumber, which affects and determines the production of FPP during the
+                catalysis process. Based on the existing chemical kinetic energy equation, we found that the
+                organization of ODE is similar to the chemical kinetic energy equation. Therefore, the above equations
+                will be used to describe these key catalytic processes. Checking the relevant literature, we found some
+                important parameter values from published papers. The details are shown in the following table:</p>
+            <figure>
+                <img src="https://2021.igem.org/wiki/images/8/84/T--FAFU-CHINA--7.2.png" style="width:60%" alt="">
+            </figure>
+            <p>The above differential equation is the general expression of the system, and the above differential
+                equation is expanded as:</p>
+                \[\left\{ \begin{array}{l}
+                \frac{{d[Aceto - acetyl - CoA]}}{{dt}} = \\
+                \frac{{{k_{cat - ERG10}} \cdot [enzyme] \cdot [acetyl - CoA]}}{{[acetyl - CoA] + {k_{m - ERG10}}}} - 2 \cdot \frac{{{k_{cat - ERG13}} \cdot [enzyme] \cdot [Aceto - acetyle - CoA]}}{{[Aceto - acetyl - CoA] + {k_{m - ERG13}}}}\\
+                \frac{{d[Mevalonate]}}{{dt}} = \\
+                \frac{{{k_{cat - ERG13}} \cdot [enzyme] \cdot [HMG - CoA]}}{{[HMG - CoA] + {k_{m - ERG8}} \cdot [enzyme]}} - \frac{{{k_{cat - ERG8}} \cdot [enzyme] \cdot [Mevalonate]}}{{[Mevalonate] + {k_{m - ERG19}} \cdot [enzyme]}}\\
+                \frac{{d[Mevalonate - P]}}{{dt}} = \\
+                \frac{{{k_{cat - ERG12}} \cdot [enzyme] \cdot [Mevalonate]}}{{[Mevalonate] + {k_{m - ERG12}} \cdot [enzyme]}} - \frac{{{k_{cat - ERG8}} \cdot [enzyme] \cdot [Mevalonate - P]}}{{[Mevalonate - P] + {k_{m - ERG8}} \cdot [enzyme]}}\\
+                \frac{{d[Mevalonate - PP]}}{{dt}} = \\
+                \frac{{{k_{cat - ERG8}} \cdot [enzyme] \cdot [Mevalonate - P]}}{{[Mevalonate - P] + {k_{m - ERG8}} \cdot [enzyme]}} - \frac{{{k_{cat - ERG19}} \cdot [enzyme] \cdot [Mevalonate - PP]}}{{[Mevalonate - PP] + {k_{m - ERG19}} \cdot [enzyme]}}\\
+                \frac{{d[IPP]}}{{dt}} = \frac{{{k_{cat - ERG19}} \cdot [enzyme] \cdot [Mevalonate - PP]}}{{[Mevalonate - PP] + {k_{m - ERG19}} \cdot [enzyme]}} - \frac{{{k_{cat - IDI}} \cdot [enzyme] \cdot [IPP]}}{{[IPP] + {k_{m - IDI}} \cdot [enzyme]}}\\
+                \frac{{d[DMAPP]}}{{dt}} = \frac{{{k_{cat - IDI}} \cdot [enzyme] \cdot [DMAPP]}}{{[DMAPP] + {k_{m - IDI}} \cdot [enzyme]}} - \frac{{{k_{cat - IDI}} \cdot [enzyme] \cdot [IPP]}}{{[IPP] + {k_{m - IDI}} \cdot [enzyme]}}\\
+                \frac{{d[FPP]}}{{dt}} = {k_{GPP}} \cdot [DMAPP]\\
+                \frac{{d[Nerolidol]}}{{dt}} = {k_{cat - N}} \cdot [FPP]
+                \end{array} \right.\]
+
+            <p>
+                (Model assumption): <br>
+                ·the protein encoded by the same mRNA has the same production rate;<br>
+                ·ignoring the population effect, that is, building a model in a single cell;<br>
+                ·60% of the glucose in the cell is converted into acetyl-CoA, and the concentration remains
+                relatively
+                stable. <br>
+                Set the initial value to zero (all variables are assumed to be 0 minutes), and the time-varying
+                graph of
+                IPP and DMAPP synthetic simulation is as follows:
+            </p>
+            <figure>
+                <img src="https://2021.igem.org/wiki/images/e/e9/T--FAFU-CHINA--7-2.png" alt="">
+            </figure>
+            <figcaption style="text-align: center;">(A)mRNA expression of plac (B)HMG pathway protein expression
+            </figcaption>
+
+            <p>
+                (A) The expression level of mRNA shows a trend of rapid and steady increase, and it stabilizes after 150
+                minutes and no longer increases. (B) mRNA shows a trend of rapid and steady growth, and stabilizes after
+                150 minutes of steady growth, and no longer grows.
+            </p>
+            <figure>
+                <img src="https://2021.igem.org/wiki/images/e/e3/T--FAFU-CHINA--7-3.png" alt="">
+            </figure>
+            <figcaption style="text-align: center; ">(A) HMG pathway product expression (B) HMG pathway product
+                expression</figcaption>
+            <p style="margin-bottom: 20px;">
+                (A) is the expression of each pathway protein. At the beginning of the reaction, IPP did not show
+                significant changes. After 100 minutes, IPP began to react, and the rate of change gradually
+                accelerated. (B) It is the synthetic expression of Nerolidol. There is no obvious change in the initial
+                stage of the reaction. After 100 minutes, the reaction begins, and the rate of change gradually
+                accelerates.
+                In summary, based on the results of predictive modeling, we predict the relationship between nerol
+                production and time in a single cell, and through similar methods, we also predicted the relationship
+                between linalool production and time. Based on the results, we can roughly predict the production of
+                nerol and linalool in this system.
+            </p>
+            <!-- 主体内容！ -->
+            <h3>1.2 Oscillator model</h3>
+
+            <p>For the synthetic oscillator, we developed a simplified model based on the activation-inhibition
+                system.
+                Only two species are described: activator A and repressor R, which jointly control the same
+                promoter; it
+                can be described by the following kinetic equation:</p>
+            <p>
+                $$
+                \begin{aligned}
+                &\frac{d A}{d t}=\alpha_{1} \zeta+\frac{\beta_{1} \zeta A^{n}}{K^{n}+A^{n}+(\gamma R)^{p}}-\delta_{1} A
+                \\
+                &\frac{d R}{d t}=\alpha_{2} \zeta+\frac{\beta_{2} \zeta A^{n}}{K^{n}+A^{n}+(\gamma R)^{p}}-\delta_{2} R
+                \end{aligned}
+                $$
+            </p>
+            <p>
+                In addition, by considering the generation of the RIDA(B) system, the influence of the synthetic
+                oscillator on replication is simulated, which is also controlled by the hybrid promoter, and the
+                equation is:
+            </p>
+            <p>
+                $$
+                \frac{d B}{d t}=\alpha_{3} \zeta+\frac{\beta_{3} \zeta A^{n}}{K^{n}+A^{n}+(\gamma R)^{p}}-\delta_{3} B
+                $$
+            </p>
+            <p>The cell cycle is modeled as an integration and excitation mechanism in which the cell length grows
+                exponentially:</p>
+            <p>
+                $$
+                \frac{d L}{d t}=\alpha_{0} L
+                $$
+            </p>
+            <p>Where (where τ is the characteristic time of the cell cycle). ζ is a parameter reflecting the synthesis
+                oscillator driven by chromosome replication:</p>
+            <p>
+
+                $$
+                \zeta= \begin{cases}1 & \text { for } L_{0} \leq L< R_{\mathrm{thr}} \\ 2 & \text { for }
+                    R_{\mathrm{thr}} \leq L< D_{\mathrm{thr}}\end{cases} $$ </p>
+
+                    <p>As mentioned above, B adjusts the coupling of synthetic oscillator and chromosome replication by
+                        increasing the replication threshold:</p>
+                    <p>
+                        $$
+                        R_{\mathrm{thr}}=D_{\mathrm{thr}} \cdot\left(\varepsilon+\frac{\eta \cdot \kappa \cdot
+                        B}{B+K_{l}}\right)
+                        $$
+                    </p>
+                    <p>Note that since all our foreign genes are controlled by the same promoter (Plac/ara), we believe
+                        that the
+                        parameters K, n, p, and g of species A, R, and B are the same.
+                        If we use D to denote the dimeric conformation and T to denote the tetrameric conformation,
+                        assuming
+                        that degradation only occurs in an enzymatic reaction, then:</p>
+                    <p>
+                        $$
+                        \left\{\begin{array}{c}
+                        \frac{d D}{d t}=-k_{+} D^{2}+\delta_{T} C T-\delta_{D} C D \\
+                        \frac{d T}{d t}=k_{+} D^{2}-\delta_{T} C T
+                        \end{array}\right.
+                        $$
+                    </p>
+                    <p>Where C corresponds to the protease concentration. If we assume that D is in a quasi-steady
+                        state, we
+                        get:</p>
+                    $$
+                    \frac{d T}{d t}=\frac{\left(\delta_{D} C\right)^{2}}{2 k_{+}}-\frac{\delta_{D} C}{2 k_{+}}
+                    \sqrt{\left(\delta_{D} C\right)^{2}+4 k_{+} \delta_{T} C T}
+                    $$
+
+                    <figure style="display: flex; justify-content: center; align-items: center;">
+                        <img src="images2/7-4.png" alt="" style="width:100%;">
+                    </figure>
+                    <figcaption>
+                        (A) Synthetic oscillator (B) Experimental distribution of cell cycle cycles and
+                        synthetic
+                        oscillator (C) Time series of coupled oscillatorsc
+                    </figcaption>
+                    <p>
+                        The fluctuation coefficient of the cell cycle fluctuates sharply with the passage of the time
+                        series, and the number of cell growth peaks in the middle of the time series, and the number in
+                        the initial and late decline phases is the smallest. We used KL divergence and calculated the KL
+                        distance of the downsampling distribution within the group. According to the time distribution
+                        of the maximum fluorescence emitted by the cell in a cell length cycle: the x-axis represents a
+                        complete cycle of cell division. In order to better show the results, we redefine the phase so
+                        that when the phase is equal to 0.5, it represents the moment when the cell length is the
+                        largest. We can get the following result: cell length increases exponentially between division
+                        events. When the replication threshold is reached, the output of the synthetic oscillator
+                        doubles. Once the cell length reaches the division threshold, it returns to the initial value,
+                        and the production rate of the synthetic oscillator will be reset to the original rate.
+                    </p>
+
+                    <h3>1.3 Box Behnken's response surface model based on backpropagation neural network</h3>
+
+                    <p>
+                        The neural network contains the connection between the input layer and the output layer through
+                        the
+                        hidden layer. These layers are connected by weights. Add bias to the hidden layer and output
+                        layer
+                        to
+                        reduce errors. The model equations are generated according to the network structure. According
+                        to
+                        the
+                        BPNN system structure, we are composed of three layers and use the deviation to establish a
+                        model
+                        equation[1].
+                    </p>
+
+                    <figure style="display: flex; justify-content: center; align-items: center;width: 100%;">
+                        <img src="https://2021.igem.org/wiki/images/7/71/T--FAFU-CHINA--7-5.png" alt=""
+                            style="width:100%;">
+                    </figure>
+                    <figcaption style="text-align: center;">
+                        BPNN Architecture involving 3 input factors, 10 nodes and 1 output
+                    </figcaption>
+
+
+                    <p>The input function of the node:</p>
+                    <p>
+                        $$
+                        R=w_{11} \times X_{1}+b_{1}
+                        $$
+                    </p>
+                    <p>Then the general equation of inputting 3 input factors to 10 nodes plus 10 deviations is:</p>
+                    <p>
+                        $$
+                        \sum_{j=1}^{10} H_{j}=\sum_{i=1, j=1}^{3,10}\left(w_{i j} \times X_{i}+b_{j}\right)
+                        $$
+                    </p>
+
+                    <p>
+                        The output function of the first node after passing the TANSIG transfer function of the hidden
+                        layer is:
+                    </p>
+                    $$
+                    \sum_{j=1}^{10} R_{j, o}=\operatorname{tansig}\left(\sum_{j=1}^{10} R_{j}\right)=\tanh
+                    \left(\sum_{j=1}^{10} R_{j}\right)
+                    $$
+                    <p>Similarly, when network traffic flows from the first node to the output factor, the input
+                        function of the
+                        output factor is:</p>
+                    <p>
+                        $$
+                        Y_{1}=\tanh \left(R_{1}\right) \times W_{10}
+                        $$
+                    </p>
+                    <p>The general equation from 10 nodes to an output factor with additional deviation is as follows:
+                    </p>
+                    <p>
+                        $$
+                        \sum_{j=1}^{10} Y_{j}=\left(\sum_{j=1}^{10} \tanh \left(R_{j}\right) \times w_{j
+                        o}\right)+b_{\circ}
+                        $$
+                    </p>
+                    <p>The function after the output layer passes the transfer function is:</p>
+                    <p>
+                        $$
+                        \sum_{j=1}^{10} Y_{j, o}=\tanh \left(\sum_{j=1}^{10} Y_{j}\right)
+                        $$
+                    </p>
+                    <p>The final response formula is:</p>
+                    <p>
+                        $$
+                        \begin{aligned}
+                        &Y_{p, B P N N}=\tan h\left\{\left[\tanh \left(w_{11} X_{1}+w_{21} X_{2}+w_{31}
+                        X_{3}+b_{1}\right)\right] \times w_{10}+\right. \\
+                        &+\left[\tanh \left(w_{12} X_{1}+w_{22} X_{2}+w_{32} X_{3}+b_{2}\right)\right] \times w_{20} \\
+                        &+\left[\tanh \left(w_{13} X_{1}+w_{23} x_{2}+w_{33} X_{3}+b_{3}\right)\right] \times w_{30} \\
+                        &+\left[\tanh \left(w_{14} X_{1}+w_{24} X_{2}+w_{34} X_{3}+b_{4}\right)\right] \times w_{40} \\
+                        &+\left[\tanh \left(w_{15} X_{1}+w_{25} X_{2}+w_{35} X_{3}+b_{5}\right)\right] \times w_{50} \\
+                        &+\left[\tanh \left(w_{16} X_{1}+w_{26} X_{2}+w_{36} X_{3}+b_{6}\right)\right] \times w_{60} \\
+                        &+\left[\tanh \left(w_{17} X_{1}+w_{27} X_{2}+w_{37} X_{3}+b_{7}\right)\right] \times w_{70} \\
+                        &+\left[\tanh \left(w_{18} X_{1}+w_{28} X_{2}+w_{38} X_{3}+b_{8}\right)\right] \times w_{80} \\
+                        &+\left[\tanh \left(w_{19} x_{1}+w_{29} X_{2}+w_{39} X_{3}+b_{9}\right)\right] \times w_{90} \\
+                        &\left.+\left[\tanh \left(w_{110} X_{1}+w_{210} X_{2}+w_{310} X_{3}+b_{10}\right)\right] \times
+                        w_{100}\right\}+b_{o}
+                        \end{aligned}
+                        $$
+                    </p>
+                    <p>
+                        Therefore, we established a mathematical model of the independent variables and the required
+                        predictors.
+                        According to the BBD principle, we fit the experimental values into the second-order model shown
+                        below:
+                    </p>
+                    <p>
+                        $$
+                        \left\{\begin{array}{c}
+                        Y_{e}=\beta_{0}+\sum_{i=1}^{n} \beta_{i} X_{i}+\sum_{i=1}^{n} \beta_{i i}
+                        X_{i}^{2}+\sum_{i=1}^{n-1} \sum_{j=i+1}^{n} \beta_{i j} X_{i} X_{j}+\varepsilon \\
+                        \beta=\left(X^{\top} X\right)^{-1}\left(X^{\top} Y\right)
+                        \end{array}\right.
+                        $$
+                    </p>
+                    <p>
+                        We fit the data obtained in the experiment and consider various factors to each model, use
+                        Design-Expert13 software to compare the differences between the models, and evaluate the model
+                        summary statistics, analyze the model through analysis of variance, and predict the value with
+                        the experiment. The values of R² are 0.95624, 0.90566, and 0.96387. The results have significant
+                        differences, which can reflect that the prediction effect is better.
+                    </p>
+                    <figure style="display: flex; justify-content: center; align-items: center;">
+                        <img src="https://2021.igem.org/wiki/images/8/87/T--FAFU-CHINA--model.jpeg" alt=""
+                            style="width:100%;">
+                    </figure>
+
+                    <figcaption style="text-align: center;">
+                        (A) Neural network model (B) Prediction results
+                    </figcaption>
+
+                    <figure style="display: flex; justify-content: center; align-items: center;">
+                        <img src="https://2021.igem.org/wiki/images/2/29/T--FAFU-CHINA--7.19.png" alt=""
+                            style="width:80%;">
+
+                    </figure>
+                    <figure style="display: flex; justify-content: center; align-items: center;">
+                        <img src="https://2021.igem.org/wiki/images/f/f6/T--FAFU-CHINA--7-7.png" alt="">
+                    </figure>
+                    <figcaption style="text-align: center; margin-bottom: 20px;">
+                        Figure 7 (A,B,C) Contour and three-dimensional surface map of the interaction of temperature,
+                        alcohol,
+                        xylose and glucose
+                    </figcaption>
+                    <p>
+                        According to the result percentage residual error is within ±4%, and does not exceed the
+                        allowable limit of ±5%, the R2 and MSE can be known by the calculation formula, and it can be
+                        seen that the experimental value fits well.
+                    </p>
+                    <p>
+                        $$
+                        \begin{gathered}
+                        \text { Residual } \varepsilon=Y_{e}-Y_{p} \\
+                        \text { Percentage residual }=\epsilon * 100 / Y_{e} \\
+                        R^{2}=\frac{\left[\left(n \sum Y_{e} Y_{p}\right)-\left(\sum Y_{e}\right)\left(\sum
+                        Y_{p}\right)\right]^{2}}{\left(n \sum Y_{e}^{2}-\left(\sum Y_{e}\right)^{2}\right)\left(n \sum
+                        Y_{p}^{2}-\left(\sum Y_{p}\right)^{2}\right)} \\
+                        \qquad \mathrm{MSE}=\sum_{i=1}^{15} \varepsilon_{i}^{2} k
+                        \end{gathered}
+                        $$
+                    </p>
+                    <figure style="display: flex; justify-content: center; align-items: center;">
+                        <img src="https://2021.igem.org/wiki/images/8/8b/T--FAFU-CHINA--200-2.png" style="width: 100%;"
+                            alt="">
+                    </figure>
+                    <figcaption style="text-align: center; margin-bottom: 20px;">
+                        Figure 8 Error prediction comparison results
+                    </figcaption>
+                    <h3>1.4 Growth Curve Model</h3>
+                    <h3>1.4.1 Logistic Model</h3>
+                    <p>
+                        The logistic equation is the most commonly used model to describe the kinetics of bacterial
+                        growth.
+                        Especially in systems biology and computational biology. This equation is usually used to fit a
+                        growth
+                        curve based on optical density (OD) to understand the dynamics of living systems.
+                    </p>
+                    <p>The logistic equation describing the population number N(t) and time t is :</p>
+                    <p>
+                        $$
+                        N(t)=\frac{K}{1+\frac{K-N_{0}}{N_{0}} \times e^{-r t}}
+                        $$
+                    </p>
+                    <p>Where N0 is the initial quantity (initial concentration), r is the growth rate, and K is the
+                        maximum
+                        capacity of the population.
+                        With the change of cell growth status, the growth will finally enter the recession period, and
+                        the
+                        growth curve will gradually decline during the recession period. This causes the traditional
+                        Logistic
+                        model to fit the growth curve and cannot accurately follow the growth curve trend in the final
+                        recession
+                        period. Therefore, we introduce a Logistic model with parameter decay rate :</p>
+
+                    <p>
+                        $$
+                        N(t)=\frac{K}{1+\frac{K-N_{0}}{N_{0}} \times e^{-r(1-d t) t}}
+                        $$
+                    </p>
+                    <p>Among them, N0, K, r and d represent the initial cell concentration, saturated cell
+                        concentration, growth
+                        rate and decay rate, respectively.</p>
+                    <h3>1.5 Bacterial growth model based on DGM(2,1) and LSSVM</h3>
+                    <h3>1.5.1 Dark Model[DGM(2,1)]</h3>
+                    <p>According to bacterial growth contains four stages, including lag phase, log or exponential
+                        phase,
+                        stationary phase, and death phase[1]. Therefore, we can set as follows based on the original
+                        data :</p>
+                    <P>
+                        $$
+                        x^{(0)}=\left(x^{(0)}(1), x^{(0)}(2), \cdots, x^{(0)}(n)\right)
+                        $$
+                    </P>
+                    <p>The 1-AGO sequence x and 1-IAGO sequence are respectively :</p>
+                    <P> $$
+                        \left\{\begin{array}{c}
+                        x^{(1)}=\left(x^{(1)}(1), x^{(1)}(2), \cdots, x^{(1)}(n)\right) \\
+                        \alpha^{(1)} x^{(0)}=\left(\alpha^{(1)} x^{(0)}(2), \cdots, \alpha^{(1)} x^{(0)}(n)\right)
+                        \end{array}\right.
+                        $$</P>
+                    <p>In :</p>
+                    <P>
+                        $$
+                        \alpha^{(1)} x^{(0)}(k)=x^{(0)}(k)-x^{(0)}(k-1), k=2,3, \cdots, n
+                        $$
+                    </P>
+                    <p>Then :</p>
+                    <p>
+                        $$
+                        \alpha^{(1)} x^{(0)}(k)+a x^{(0)}(k)=b
+                        $$
+                    </p>
+
+                    <p>
+                        $$
+                        \hat{x}^{(1)}(k+1)=\left(\frac{b}{a^{2}}-\frac{x^{(0)}(1)}{a}\right) e^{-a
+                        k}+\frac{b}{a}(k+1)+\left(x^{(0)}(1)-\frac{b}{a}\right) \frac{1+a_{k}}{a}
+                        $$
+                    </p>
+                    <p>Sigmoid functions are the general ways of computationally treating bacterial growth data.</p>
+                    <h3>1.5.2 Bacterial growth Models </h3>
+                    <p>Sigmoid functions are the general ways of computationally treating bacterial growth data. The
+                        logistic
+                        function is defined as follow :</p>
+                    <p>
+                        $$
+                        y=\frac{A}{\left\{1+\exp \left[\frac{4 \psi_{m}}{A}(\lambda-t)+2\right]\right\}}
+                        $$
+                    </p>
+                    <p>Gompertz function as following :</p>
+                    <p>
+                        $$
+                        y=\operatorname{Aexp}\left\{-\exp \left[\frac{\psi_{m} \cdot e}{A}(\lambda-t)+1\right]\right\}
+                        $$
+                    </p>
+                    <p>Where</p>
+                    <p>
+                        $$
+                        y=\ln \left(\frac{N(t)}{N_{0}}\right)
+                        $$
+                    </p>
+                    <p> Y<sub>m</sub> represents the largest viable bacteria in batch culture, and represents the
+                        lagging growth
+                        stage of
+                        bacteria, which is usually small. N <sub>0</sub></sub> represents the death stage, represents
+                        the
+                        initial bacterial
+                        population, and is the bacterial population at the moment of t.</p>
+                    <h3>1.5.3 LSSVM Mathematical Formulation </h3>
+                    <p>We use LSSVM to predict the growth curve of bacteria, and the optimization problem is formulated
+                        as :</p>
+                    <p>
+                        $$
+                        \min (w, \varepsilon)=\frac{1}{2}\|w\|^{2}+\frac{1}{2} c \sum_{i=1}^{N} \varepsilon_{i}^{2}
+                        $$
+                    </p>
+                    <p>The constraints are :</p>
+                    <p>
+                        $$
+                        y_{i}=w^{T} \Phi\left(x_{i}\right)+b+\varepsilon_{i}
+                        $$
+                    </p>
+                    <p> is the non-linear function that maps the input space to the high-dimensional space, w is the
+                        weighting
+                        vector, b is the deviation, and c is the regularization parameter that determines the trade-off.
+                        The ε
+                        between the training error minimization and the smoothness is the training error. </p>
+
+                    <p>Then the corresponding Lagrangian function can be written as :</p>
+                    <p>
+                        $$
+                        L(w, b, \varepsilon, a)=\frac{1}{2}\|w\|^{2}+\frac{1}{2} c \sum_{i=1}^{N}
+                        \varepsilon_{i}^{2}-\sum_{i=1}^{N} a_{i}\left[w^{T}
+                        \Phi\left(x_{i}\right)+b+\varepsilon_{i}-y_{i}\right]
+                        $$
+                    </p>
+                    <p>The optimality conditions are :</p>
+                    <p>
+                        $$
+                        \left\{\begin{array}{l}
+                        \frac{\partial L(w, b, \varepsilon, a)}{\partial w}=0 \rightarrow w=\sum_{j=1}^{N} a_{j}
+                        \Phi\left(x_{j}\right) \\
+                        \frac{\partial L(w, b, \varepsilon, a)}{\partial b}=0 \rightarrow \sum_{j=1}^{N} a_{j}=0 \\
+                        \frac{\partial L(w, b, \varepsilon, a)}{\partial e_{j}}=0 \rightarrow a_{j}=c e_{j} j=1, \ldots,
+                        N \\
+                        \frac{\partial L(w, b, \varepsilon, a)}{\partial a_{j}}=0 \rightarrow a_{j}=w^{T}
+                        \Phi\left(x_{j}\right)+b+e_{j} j=1, \ldots, N
+                        \end{array}\right.
+                        $$
+                    </p>
+                    <p>Where</p>
+                    <p>
+                        $$
+                        \left\{\begin{array}{c}
+                        Z=\left[\varphi\left(x_{1}\right)^{T} y_{1} ; \cdots ; \varphi\left(x_{n}\right)^{T}
+                        y_{n}\right] \\
+                        Y=\left[y_{1} ; \cdots ; y_{n}\right] \\
+                        1=[1 ; \cdots ; 1] \\
+                        e=\left[e_{1} ; \cdots ; e_{n}\right] \\
+                        a=\left[a_{1} ; \cdots ; a_{n}\right]
+                        \end{array}\right.
+                        $$
+                    </p>
+                    <p>The solution can be written as :</p>
+                    <p>
+                        $$
+                        \left[\begin{array}{cc}
+                        0 & -Y^{T} \\
+                        Y & Z Z^{T}+\gamma I
+                        \end{array}\right]\left[\frac{a}{b}\right]=\left[\begin{array}{l}
+                        0 \\
+                        \overrightarrow{1}
+                        \end{array}\right]
+                        $$
+                    </p>
+                    <p>Therefore, the fitted LSSVM regression will be :</p>
+                    <p>
+                        $$
+                        y(x)=\sum_{i=1}^{N} a_{i} K\left(x, x_{i}\right)+b
+                        $$
+                    </p>
+                    <p>So as to get a more accurate and smooth LSSVM modeling of the bacterial growth curve :</p>
+                    <p>
+                        $$
+                        \left\{\begin{array}{c}
+                        f x=\frac{1}{n} \sum_{i=1}^{n} \frac{\left|G_{t r a i n}(t)-G_{t_{\text {real
+                        }}}(t)\right|}{\mid G_{t_{\text {real }}(t) \mid}} \\
+                        f y=\frac{1}{m} \sum_{i=1}^{m} \frac{\left|G_{\text {validation }}(t)-G_{t_{\text {real
+                        }}}(t)\right|}{\left|G_{t_{\text {real }}}(t)\right|}
+                        \end{array}\right.
+                        $$
+                    </p>
+                    <figure style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+                        <img src="https://2021.igem.org/wiki/images/e/e8/T--FAFU-CHINA--7-22.png" alt=""
+                            style="width: 90%;">
+                    </figure>
+                    <figure style="display: flex; justify-content: center; align-items: center;">
+                        <img src="https://2021.igem.org/wiki/images/f/fe/T--FAFU-CHINA--7-23.png" style="width: 90%;">
+                    </figure>
+                    <figure style="display: flex; justify-content: center; align-items: center;">
+                        <img src="https://2021.igem.org/wiki/images/3/3b/T--FAFU-CHINA--7-24.png" style="width: 90%;">
+                    </figure>
+                    <figcaption style="text-align:center">Coculture growth curve</figcaption>
+                    <h4>2 Protein modeling</h4>
+                    <a href="" id="Protein_modeling" style="position: relative; top: -200px;"></a>
+                    <h3>2.1 Introduction</h3>
+                    <p>
+                        The photoactivated protein domain provides a convenient, modular, genetically coded sensor for
+                        optogenetics and photobiology. Although these domains have now been resolved in multiple
+                        systems, the
+                        exact photoactivation mechanisms that regulate the activity of the output domain and the
+                        associated
+                        structural dynamics are not fully understood[2]. LOV photoreceptors are members of the
+                        per-Arnt-Sim
+                        (PAS) domain superfamily and use non-covalently bound flaxin mononotide (FMN) cofactors to sense
+                        450 nm
+                        (blue) photoexcitation to initiate the photocycle, in which the single-line excited state passes
+                        through
+                        intersystem crossover to the three-line excited state. Subsequently, a μ S time scale of
+                        absorption at
+                        390 nm (A390) of the covalent Cys-FDN-C4A admixture was formed on the cells [1]. The formation
+                        of 4A390
+                        Cys adduct and the concomitant protonation of adjacent N5 sites are thought to be the driving
+                        force
+                        behind the structural changes associated with effector activation in the LOV domain family,
+                        including
+                        the structure and conformation of the C-terminal Jα helix[3].
+                    </p>
+                    <figure style="display: flex; justify-content: center; align-items: center;">
+                        <img src="https://2021.igem.org/wiki/images/6/6e/T--FAFU-CHINA--7-8.png" alt="">
+                    </figure>
+                    <figcaption style="text-align: center; margin-bottom: 20px;">
+                        Figure 8 Protein structure of the LOV2 domain and light-induced structural changes during the
+                        photocycle.
+                    </figcaption>
+
+                    <h3>2.2 Predicting protein structure based on signal network model</h3>
+                    <p>Regarding protein modeling, we have adopted two approaches. The first strategy is to use a
+                        signal-based
+                        network model to predict protein structure. According to the Markov process that defines a
+                        signal
+                        transmitted on a network of amino acid residues. According to the natural structure of protein,
+                        it is
+                        regarded as a network, with amino acid residues as network nodes, which are connected by natural
+                        contacts. Define the connection strength between the i and j residues as:</p>
+                    <p>
+                        $$
+                        a_{i j}=\frac{N_{i j}}{\sqrt{N_{i} N_{j}}}
+                        $$
+                    </p>
+                    <p>Where N, is the number of heavy atom pairs with a distance of less than 4 Å between the two
+                        residues, and
+                        Ni and Nj respectively correspond to the number of heavy atoms of the two residues.
+                        Consider the time-discrete Markov process of transmitting signals between network nodes. We
+                        assume that
+                        at a certain moment, the probability that the signal is at node i is pi. After one step, the
+                        signal
+                        passes from node i to node k connected to it, then this The probability that the time signal is
+                        at node
+                        k is mkipi;. The transfer probability mki can be considered to be proportional to the strength
+                        of each
+                        connection aki, normalizing all the connections related to node i, the probability of signal
+                        transfer
+                        from node i to node j is:</p>
+                    <p>
+                        $$
+                        m_{i j}=\frac{a_{i j}}{\sum_{k} a_{k j}}
+                        $$
+                    </p>
+                    <p>Thus, the transition matrix of the Markov process can be obtained:</p>
+                    <p>
+                        $$
+                        M=\left\{m_{i j}\right\}=\frac{a_{i j}}{\sum_{k} a_{k j}}
+                        $$
+                    </p>
+                    <p>Expressing this process in the form of a matrix, the state of the system at time t can be
+                        expressed as a
+                        vector:</p>
+                    <p>
+                        $$
+                        P(t)=\left[P_{1}(t), P_{2}(t), \ldots, P_{n}(t)\right]^{T}
+                        $$
+                    </p>
+                    <p>Where pi(t) represents the probability that the signal is at node i at time t, then at time t+1,
+                        the
+                        state of the system is:</p>
+                    <p>
+                        $$
+                        P(t+1)=M P(t)=M^{t} P(0)
+                        $$
+                    </p>
+                    <p>According to the random process theory, for a specific type of transition matrix M, when t tends
+                        to
+                        infinity, the system will reach a steady state Ps, which will no longer change with time, at
+                        this time:
+                    </p>
+                    <p>
+                        $$
+                        P_{S}=M P_{S}
+                        $$
+                    </p>
+                    <p>We consider two special initial states, the signal is at node i and node j at the initial moment,
+                        then
+                        the corresponding initial distribution is:</p>
+                    <p>
+                        $$
+                        \left\{\begin{array}{l}
+                        P_{i}(0)=[0,0, \ldots, 1(i t h), \ldots 0] \\
+                        P_{j}(0)=[0,0, \ldots, 1(j t h), \ldots 0
+                        \end{array}\right]
+                        $$
+                    </p>
+                    <p>Let Pi(k) and Pj(k) indicate that the system starts from and respectively, and the state
+                        distribution
+                        after k steps has been evolved. The difference between the two states at a certain moment is
+                        defined as：
+                    </p>
+                    <p>
+                        $$
+                        c_{i j}(k)=\left|P_{i}(k)-P_{j}(k)\right|
+                        $$
+                    </p>
+                    <p>It can be considered that the distributions obtained by the evolution of the two processes are
+                        sufficiently similar, and the distance dij between the pair of nodes(i，j) is taken as the
+                        required
+                        number of discrete evolution steps k. The larger the value of k, the longer the signal
+                        transmission from
+                        the two nodes will take to obtain a similar distribution, which proves that the position
+                        difference
+                        between nodes i and j in the network is greater, and vice versa, it means that they are closer
+                        in the
+                        network[4].</p>
+                    <figure style="display: flex; justify-content: center; align-items: center;">
+                        <img src="https://2021.igem.org/wiki/images/4/4b/T--FAFU-CHINA--7-9.png" alt=""
+                            style="width: 100%;">
+                    </figure>
+                    <figcaption style="text-align: center; margin-bottom: 20px;">
+                        (A) Native inter-residue distances (B)Local Quality Estimate-All Chains
+                    </figcaption>
+                    <h3>2.3 Optimal algorithm of bee colony structure based on balance algorithm</h3>
+                    <p>In order to optimize the structure of the protein model, we used a balanced evolutionary
+                        artificial bee
+                        colony (BE-ABC) algorithm to solve this problem. The purpose is to find the structure of a given
+                        protein
+                        sequence with the smallest free energy value. The BE-ABC algorithm can outperform many
+                        state-of-the-art
+                        methods and can be effectively used for protein structure optimization.</p>
+                    <p>Locations of amino acid residues in the space are deter-mined as follows：</p>
+                    <p>
+                        $$
+                        \left(x_{i}, y_{i}, z_{i}\right)=\left\{\begin{array}{cc}
+                        (0,0,0) & i=1 \\
+                        (0,1,0) & i=2 \\
+                        \left(\cos \left(\theta_{1}\right), \sin \left(\theta_{1}\right)+1,0\right) & i=3 \\
+                        \left(\begin{array}{c}
+                        x_{i-1}+\cos \left(\theta_{i-2}\right) \cdot \cos \left(\beta_{i-2}\right), \\
+                        y_{i-1}+\sin \left(\theta_{i-2}\right) \cdot \cos \left(\beta_{i-2}\right), \\
+                        z_{i-1}+\sin \left(\beta_{i-2}\right)
+                        \end{array}\right) & 4 \leq i \leq N
+                        \end{array}\right.
+                        $$
+                    </p>
+                    <p>The nature of the i single particle is reflected by ξi. If residue i is hydrophilic, then ξi=1;
+                        otherwise, ξi=-1.</p>
+                    <p>
+                        $$
+                        r_{i j}=\sqrt{\left[1+\sum_{k=i+1}^{j-1} \cos \left(\sum_{l=i+1}^{k}
+                        \theta_{l}\right)\right]^{2}+\left[\sum_{k=i+1}^{j-1} \sin \left(\sum_{l=i+1}^{k}
+                        \theta_{l}\right)\right]^{2}}
+                        $$
+                    </p>
+                    <p>C(ξi,ξj) represents the interaction between two particles:</p>
+                    <p>
+                        $$
+                        C\left(\xi_{i}, \xi_{j}\right)=\frac{1}{8}\left(1+\xi_{i}+\xi_{j}+5 \xi_{i} \xi_{j}\right)
+                        $$
+                    </p>
+                    <p>Once we determine the structure of the known protein, it can be specified by a set of angle
+                        parameters,
+                        and the corresponding free energy of the protein structure can be calculated. In the 3D protein
+                        model,
+                        the free energy function E can be defined as:</p>
+                    <p>
+                        $$
+                        E\left(\left[\theta_{1}, \ldots, \theta_{N-2}, \beta_{1}, \ldots,
+                        \beta_{N-3}\right]\right)=\sum_{i=1}^{N-2} \frac{1-\cos \left(\theta_{i}\right)}{4}+4
+                        \sum_{i=1}^{N-2} \sum_{j=i+2}^{N}\left[r_{i j}^{-12}-C\left(\xi_{i}, \xi_{j}\right) r_{i
+                        j}^{-6}\right]
+                        $$
+                    </p>
+                    <p>where ξi reflects the binary property of the i particle in the sequence, rij denotes the distance
+                        between
+                        residues i and j in the 3D space, and C(ξi,ξj) represents the interaction between these two
+                        particles.
+                        In this way, the protein folding task is transformed into a constrained numerical optimization
+                        problem.
+                        Given a protein sequence, we find the best angle vector related to the minimum free energy
+                        value[5]:</p>
+                    <p>
+                        $$
+                        \left[\theta_{1}, \ldots, \theta_{N-2}, \beta_{1}, \ldots,
+                        \beta_{N-3}\right]=\left\{\begin{array}{c}
+                        \arg \left(\min _{-180<\theta_{i}, \beta_{j}< 180^{\circ}}\left(E\left(\left[\theta_{1}, \ldots,
+                            \theta_{N-2}, \beta_{1}, \ldots, \beta_{N-3}\right]\right)\right)\right) \\ 1 \leq i \leq
+                            N-2,1 \leq j \leq N-3 \end{array}\right. $$ </p>
+                            <p>The following equation shows how the j element of the i employed bee’s location Xi is
+                                generated:
+                            </p>
+                            <p>
+                                $$
+                                \left\{\begin{array}{l}
+                                X_{i}^{j} \leftarrow L^{j}+\operatorname{rand}(0,1) \cdot\left(U^{j}-L^{j}\right) \\
+                                i=1,2, \ldots, N_{N} / 2, j=1,2, \ldots, \operatorname{Dim}
+                                \end{array}\right.
+                                $$
+                            </p>
+                            <p>where rand(0,1) denotes a random number obeying uniform distribution.
+                                The following equation shows how the i employed bee takes usage of the randomly chosen k
+                                employed bee’s
+                                location to update the j dimension:</p>
+                            <p>
+                                $$
+                                \left\{\begin{array}{c}
+                                X_{i}^{* j} \leftarrow X_{i}^{j}+\operatorname{rand}(-1,1)
+                                \cdot\left(X_{k}^{j}-X_{i}^{j}\right) \cdot
+                                \frac{\operatorname{trial}(i)}{\operatorname{trial}(i)+\operatorname{trial}(k)} \\
+                                k \in\{1,2, \ldots, s N / 2\}, k \neq i
+                                \end{array}\right.
+                                $$
+                            </p>
+                            <p>The probability index P is calculated according to the following equation to reflect the
+                                search
+                                quality
+                                of the employed bees, so the effect of optimizing the protein structure can be achieved.
+                            </p>
+                            <p>
+                                $$
+                                \left\{\begin{aligned}
+                                P(i) &=\frac{f(i)}{\sum_{j=1}^{S N / 2} f(j), i=1,2, \ldots, s N / 2}, \\
+                                f(i) &= \begin{cases}\frac{1}{1+E\left(\mathbf{X}_{i}\right)} & \text { if }
+                                E\left(\mathbf{X}_{i}\right) \geq 0 \\
+                                1-E\left(\mathbf{X}_{i}\right) & \text { if } E\left(\mathbf{X}_{i}\right)< 0\end{cases}
+                                    \end{aligned}\right. $$ </p>
+                                    <p>
+                                        $$RMSE(X,Y) = \sqrt[]{\frac{1}{Dim}(\sum^{Dim}_{i=1}(X_i-Y_i)^2)}$$
+                                    </p>
+                                    <p>The pseudo code of the BE-ABC algorithm is as follows:</p>
+                                    <figure style="display: flex; justify-content: center; align-items: center;">
+                                        <img src="https://2021.igem.org/wiki/images/7/7a/T--FAFU-CHINA--7.36.png" alt=""
+                                            style="width: 100%;">
+                                    </figure>
+                                    <figure
+                                        style="display: flex; justify-content: center; align-items: center; margin-top: 30px;">
+                                        <img src="https://2021.igem.org/wiki/images/0/07/T--FAFU-CHINA--7-10.png" alt=""
+                                            style="width: 100%;">
+                                    </figure>
+                                    <figcaption style="text-align: center; margin-bottom: 20px;">
+                                        (A) LOV2 atom connection simulation results (B) Convergence curves of BE-ABC
+                                    </figcaption>
+                                    <h3>2.4 Prediction of protein structure based on Alphafold</h3>
+                                    <p>We use the neural network-based model AlphaFold[6], the median skeleton accuracy
+                                        of the
+                                        AlphaFold
+                                        structure is 0.96 Å r.m.s. d.95, and the median skeleton accuracy of the
+                                        suboptimal
+                                        method is
+                                        2.8 Å
+                                        r.m.s. d.95. In addition to the very precise domain structure, AlphaFold can
+                                        also
+                                        generate
+                                        highly
+                                        precise side chains. When the backbone is highly accurate and even when powerful
+                                        templates are
+                                        available, it is a significant improvement over template-based methods. Compared
+                                        with
+                                        the best
+                                        alternative method of 3.5 Å r.m.s. d.95, AlphaFold's all-atom accuracy is 1.5 Å
+                                        r.m.s.
+                                        d.95. It
+                                        can be
+                                        extended to very long proteins with accurate domains and domain packaging.
+                                        Finally, the
+                                        model
+                                        can
+                                        provide accurate, per-residue estimates of its reliability, so that these
+                                        predictions
+                                        can be
+                                        used with
+                                        confidence. By running in a Docker environment, we compare and train the
+                                        existing known
+                                        amino
+                                        acid
+                                        sequences with the database, and screen out reasonable protein structures;
+                                        finally, we
+                                        use PyMOL
+                                        to
+                                        beautify rendering and visualization.</p>
+                                    <figure
+                                        style="display: flex; justify-content: center; align-items: center; margin-top: 30px;">
+                                        <img src="https://2021.igem.org/wiki/images/c/c6/T--FAFU-CHINA--7-11.png" alt=""
+                                            style="width: 100%;">
+                                    </figure>
+                                    <figcaption style="text-align: center; margin-bottom: 20px;">
+                                        The model architecture of Alphafold2
+                                    </figcaption>
+                                    <figure
+                                        style="display: flex; justify-content: center; align-items: center; margin-top: 30px;">
+                                        <img src="https://2021.igem.org/wiki/images/a/a5/T--FAFU-CHINA--7-12.png" alt=""
+                                            style="width: 100%;">
+                                    </figure>
+                                    <figcaption style="text-align: center; margin-bottom: 20px;">
+                                        Schematic diagram of the unfolding mechanism of the C-terminal Jα helix of LOV2.
+                                        The
+                                        PAS core
+                                        is shown in gray, the FMN is shown in light gray, and the Jα helix is ​​shown in
+                                        green.
+                                    </figcaption>
+                                    <p>At the same time, we use Gromacs software to perform molecular dynamics
+                                        simulation on
+                                        protein
+                                        molecules.
+                                        For a system with N interacting atoms, Molecular Dynamics(MD) simulation to
+                                        solve the
+                                        Newtonian
+                                        equation
+                                        of motion is:</p>
+                                    <p>
+                                        m_i\frac{\partial^2r_i}{\partial t^2} = F_i, i=1,\cdots N
+                                    </p>
+                                    <p>The force on an atom in an amino acid is a negative value of the derivative of
+                                        the
+                                        potential
+                                        energy
+                                        function</p>
+                                    <p>
+                                        $$F_i = - \frac{\partial V}{\partial r_i}$$
+                                    </p>
+                                    <p>In the MD simulation, the harmonic oscillator approximation is used for the bond.
+                                        The
+                                        total
+                                        internal
+                                        energy U=Ekin+Epot and the specific heat CV should be corrected. For a
+                                        one-dimensional
+                                        oscillator with a
+                                        frequency of ν, the energy and heat capacity are corrected as follows:</p>
+                                    <p>
+                                        $$
+                                        \left\{\begin{array}{c}
+                                        U^{Q M}=U^{c l}+k T\left(\frac{1}{2} x-1+\frac{x}{e^{x}-1}\right) \\
+                                        C_{V}^{Q M}=C_{V}^{c l}+k\left(\frac{x^{2}
+                                        e^{x}}{\left(e^{x}-1\right)^{2}}-1\right)
+                                        \end{array}\right.
+                                        $$
+                                    </p>
+                                    <p>
+                                        Where , when the high-frequency quantum oscillator is in the ground state, it
+                                        has a zero
+                                        point
+                                        energy of
+                                        , and the classical harmonic oscillator will absorb too much energy (kT).</p>
+                                    <figure
+                                        style="display: flex; justify-content: center; align-items: center; margin-top: 30px;">
+                                        <img src="https://2021.igem.org/wiki/images/4/4e/T--FAFU-CHINA--7-13.png" alt=""
+                                            style="width: 100%;">
+                                    </figure>
+                                    <figcaption style="text-align: center; margin-bottom: 20px;">
+                                        LOV2 activation stage and experimental test time
+                                    </figcaption>
+                                    <p>The dynamics of the chromophore mainly occur on the ultra-fast time scale, and
+                                        the
+                                        protein matrix
+                                        changes
+                                        occur after this, and the time constant of the entire Jα helix unwinding is
+                                        313µs.
+                                        Compared with
+                                        the
+                                        light state Jα helix, corresponding to the residues of the whole protein
+                                        including the
+                                        Jα helix
+                                        and the
+                                        Jα helix alone, the RMSD vs. time is plotted as shown below.</p>
+                                    <figure
+                                        style="display: flex; justify-content: center; align-items: center; margin-top: 30px;">
+                                        <img src="https://2021.igem.org/wiki/images/d/df/T--FAFU-CHINA--7-14.png" alt=""
+                                            style="width: 100%;">
+                                    </figure>
+                                    <figcaption style="text-align: center; margin-bottom: 20px;">
+                                        Molecular dynamics simulation shows the stability of the Jα helix
+                                    </figcaption>
+                                    <p>In order to explore the structural and functional characteristics of LOV2, we
+                                        first used
+                                        the
+                                        Protein
+                                        Similarity Search function of EMBL-EBI to search the amino acid sequence of LOV2
+                                        for
+                                        similar
+                                        protein
+                                        function sequence. Using the UniProtKB/Swiss-Prot database as the standard, a
+                                        total of
+                                        50
+                                        members were
+                                        retrieved. Then use the conserved motifs of similar proteins to analyze by
+                                        Multiple Em
+                                        for Motif
+                                        Elicitation, and set the number of motifs to 15.</p>
+                                    <figure
+                                        style="display: flex; justify-content: center; align-items: center; margin-top: 30px;">
+                                        <img src="https://2021.igem.org/wiki/images/1/1d/T--FAFU-CHINA--7-15.png "
+                                            alt="" style="width: 100%;">
+                                    </figure>
+                                    <figcaption style="text-align: center; margin-bottom: 20px;">
+                                        (A) The structure of LOV2 and the similarity protein Motif (B) Amino
+                                        acid logo
+                                        icon
+                                        (C)
+                                        Comparison result of Protein Similarity Search
+                                    </figcaption>
+                                    <p>In order to further understand the protein interaction relationship of LOV2, we
+                                        use the
+                                        STRING
+                                        website to
+                                        predict the interaction of LOV2 protein, select the model plant Arabidopsis as a
+                                        reference, and
+                                        select
+                                        high confidence (0.700) for the minimum required interaction score. The setting
+                                        parameters are
+                                        divided
+                                        into two categories: One does not use clustering and keeps the original state,
+                                        the
+                                        second uses
+                                        kmeans
+                                        clustering (network is clustered to a specified number of clusters) and the
+                                        parameter is
+                                        set to
+                                        10. CRY
+                                        subfamily members have the strongest protein interactions and are closely
+                                        related to
+                                        some PHY
+                                        subfamily
+                                        members.</p>
+                                    <figure
+                                        style="display: flex; justify-content: center; align-items: center; margin-top: 30px;">
+                                        <img src="https://2021.igem.org/wiki/images/d/df/T--FAFU-CHINA--7-16.png  "
+                                            alt="" style="width: 100%;">
+                                    </figure>
+                                    <figcaption style="text-align: center; margin-bottom: 20px;">
+                                        (A) LOV2 simple protein interaction network (B) LOV2 complex protein
+                                        interaction
+                                        network
+                                    </figcaption>
+                                    <p>Finally, the sequence was compared with MEGA 11 software, and the phylogenetic
+                                        tree of
+                                        related
+                                        proteins
+                                        was constructed by IQ-TREE v1.6 software using the maximum likelihood method,
+                                        and the
+                                        verification
+                                        parameter Bootstrap was set to 1000. According to the phylogenetic tree cluster
+                                        structure, we
+                                        can divide
+                                        it into five families: Class I, Class II, Class III, Class IV and Class V. The
+                                        number on
+                                        the
+                                        branch
+                                        indicates the credibility of the node based on 1000 repetitions in the Bootstrap
+                                        verification,
+                                        and it
+                                        can be seen that its feasibility is high.</p>
+                                    <figure
+                                        style="display: flex; justify-content: center; align-items: center; margin-top: 30px;">
+                                        <img src="https://2021.igem.org/wiki/images/2/2d/T--FAFU-CHINA--7-17.png "
+                                            alt="" style="width: 100%;">
+                                    </figure>
+                                    <figcaption style="text-align: center; margin-bottom: 20px;">
+                                        Evolutionary tree of similar proteins
+                                    </figcaption>
+                                    <h4>3 Aroma diffusion simulation</h4>
+                                    <a href="" id="Aroma_diffusion_simulation"
+                                        style="position: relative; top: -200px;"></a>
+                                    <h3>3.1 Medium gas simulation</h3>
+                                    <p>We performed a brief molecular dynamics simulation of microorganisms in the
+                                        culture
+                                        medium, and
+                                        wrote a
+                                        molecular simulation program with MATLAB, which verified the Maxwell-Boltzmann
+                                        velocity
+                                        distribution and
+                                        ideal gas law, demonstrated the heat conduction and convection, and the behavior
+                                        of the
+                                        liquid
+                                        phase.
+                                        Qualitative verification.</p>
+                                    <figure
+                                        style="display: flex; justify-content: center; align-items: center; margin-top: 30px;">
+                                        <img src="https://2021.igem.org/wiki/images/2/29/T--FAFU-CHINA--7-18.png" alt=""
+                                            style="width: 100%;">
+                                    </figure>
+                                    <figcaption style="text-align: center; margin-bottom: 20px;">
+                                        Gas simulation in a petri dish
+                                    </figcaption>
+                                    <h3>3.2 Small night light gas simulation</h3>
+                                    <p>We simulate the gas of the night light that can emit fragrance, so as to reach
+                                        the index
+                                        of
+                                        evaluating
+                                        the effect of fragrance. The classical chemical gas diffusion simulation
+                                        calculation
+                                        model is
+                                        mainly the
+                                        Gaussian smoke mass diffusion model [6]. The applicable occasions for the
+                                        Gaussian smoke
+                                        mass
+                                        diffusion
+                                        model include: instantaneous gas emission and diffusion after the instantaneous
+                                        effect
+                                        of heavy
+                                        gas
+                                        disappears. The mode is described as follows:
+                                        (1) For the wind speed greater than 0.5 m/s, the concentration at a certain
+                                        point in the
+                                        wind
+                                        direction
+                                        space of the discharge source without initial scale at time t:</p>
+                                    <p>
+                                        $$
+                                        \begin{gathered}
+                                        C^{\prime}(x, y, z, \mathrm{H})=\frac{Q}{(2 \pi)^{1.5} \sigma_{x} \sigma_{y}
+                                        \sigma_{z}} \cdot \exp \left(-\frac{(x-u \cdot t)^{2}}{2 \sigma_{x}^{2}}\right)
+                                        \cdot \exp \left(-\frac{y^{2}}{2 \sigma_{y}^{2}}\right) \\
+                                        \left(\exp \left(-\frac{(z-H)^{2}}{2 \sigma_{z}^{2}}\right)+\exp
+                                        \left(-\frac{(z+H)^{2}}{2 \sigma_{z}^{2}}\right)\right)
+                                        \end{gathered}
+                                        $$
+                                    </p>
+                                    <p>(2) If the wind speed is greater than 0.5 m/s and has an initial scale, use a
+                                        virtual
+                                        point
+                                        source for
+                                        calculation:</p>
+                                    <p>
+                                        $$
+                                        \left\{\begin{array}{c}
+                                        \sigma_{y}=\sigma_{x}=\sigma_{y}\left(x+X_{y}\right) \\
+                                        \sigma_{z}=\sigma_{z}\left(x+X_{z}\right)
+                                        \end{array}\right.
+                                        $$
+                                    </p>
+                                    <p>At the same time, we consider that the night light substrate is a traditional
+                                        single-hole
+                                        diffusion model
+                                        (the interior is assumed to be a sphere), and the factor that causes the ambient
+                                        air
+                                        temperature
+                                        to rise
+                                        due to light is added, and the gas diffusion amount is:</p>
+                                    <p>$$
+                                        A_{k}(t)=(-1)^{k} \frac{2 a_{2} C_{\mathrm{i}} R}{k \pi}\left[\frac{k^{2}
+                                        \pi^{2} D(t)}{R^{2}}-a_{2}\right]^{-1}\left[\mathrm{e}^{-\frac{k^{2} \pi^{2}
+                                        D(t)}{R^{2}} t}-\mathrm{e}^{-a_{2} t}\right], t \geqslant 0
+                                        $$</p>
+                                    <p>
+                                        $$
+                                        M=\int_{\text {sphere }}\left(C_{\mathrm{i}}-C\right) \mathrm{d}
+                                        V=\int_{0}^{R}\left[C_{\mathrm{i}}-\sum_{k=1}^{+\infty} \frac{1}{r} A_{k}(t)
+                                        \sin \frac{k \pi}{R} r-\mu(t)\right] 4 \pi r^{2} \mathrm{~d} r=\frac{4}{3} \pi
+                                        R^{3}\left[C_{\mathrm{i}}-\mu(t)\right]+\sum_{k=1}^{+\infty}(-1)^{k} \frac{4
+                                        R^{2}}{k} A_{k}(t)
+                                        $$
+                                    </p>
+                                    <p>C—the gas concentration at any point in the night light at any time, r—the
+                                        distance from
+                                        any
+                                        point in the
+                                        night light to the center of the sphere, t—time, R—the radius of the night
+                                        light, and
+                                        the
+                                        coefficient of
+                                        the Ak (t) series.</p>
+                                    <p>
+                                        We assume that the number of gas molecules inside the device is 10,000, the
+                                        number of iterations is 500, the derivative levels are 1, 2, and 3 respectively,
+                                        and the temperature gradient is set to 0°C, 20°C, and 40°C as parameters. It can
+                                        be seen from the figure that when the light affects the surrounding temperature,
+                                        the thermal movement of gas molecules intensifies, and the diffusion speed to
+                                        the outside of the container is accelerated, and the amount of gas is
+                                        continuously decreasing. At the same time, we simulated the position of the air
+                                        outlet of the night light and optimized the fitting. It can be concluded that
+                                        the gas concentration at the beginning of the air outlet of the night light is
+                                        the largest. According to the calculation of the Gaussian smoke diffusion model,
+                                        the gas concentration is continuously decreasing during the gas emission
+                                        process, showing a trend of thermal gradient change. We can extend this
+                                        simulation law to the development and application of night lights in the future,
+                                        which has reference value.
+                                    </p>
+
+                                    <figure
+                                        style="display: flex; justify-content: center; align-items: center; margin-top: 30px;">
+                                        <img src="https://2021.igem.org/wiki/images/5/54/T--FAFU-CHINA--7-19.png" alt=""
+                                            style="width: 100%;">
+                                    </figure>
+                                    <figcaption style="text-align: center; margin-bottom: 20px;">
+                                        Simulation of gas diffusion in night light
+                                    </figcaption>
+                                    <figure
+                                        style="display: flex; justify-content: center; align-items: center; margin-top: 30px;">
+                                        <img src="https://2021.igem.org/wiki/images/4/4a/T--FAFU-CHINA--7-20.png" alt=""
+                                            style="width: 100%;">
+                                    </figure>
+                                    <figcaption style="text-align: center; margin-bottom: 20px;">
+                                        (A) Thermodynamic diagram of gas diffusion (B) Diffusion error
+                                        analysis (C)
+                                        Top angle
+                                        of gas
+                                        diffusion
+                                    </figcaption>
+                                    <figure
+                                        style="display: flex; justify-content: center; align-items: center; margin-top: 30px;">
+                                        <img src="https://2021.igem.org/wiki/images/e/ef/T--FAFU-CHINA--7-21.png" alt=""
+                                            style="width: 100%;">
+                                    </figure>
+                                    <figcaption style="text-align: center; margin-bottom: 20px;">
+                                        Real-time gas diffusion simulation (overview view)
+                                    </figcaption>
+                                    <h3>Reference</h3>
+                                    <p>[1] M. Vijayanand, R. Varahamoorthi, P. Kumaradhas & S. Sivamani (2021):
+                                        Modelling and
+                                        optimisation of
+                                        hardness in citrate stabilised electroless nickel boron (ENi-B) coatings using
+                                        back
+                                        propagation
+                                        neural
+                                        network – Box Behnken design and simulated annealing –genetic algorithm,
+                                        Transactions of
+                                        the
+                                        IMF, DOI:
+                                        10.1080/00202967.2021.1898172 <br>
+                                        [2] Koyama T , Iwata T , Yamamoto A , et al. Different Role of the Jα Helix in
+                                        the
+                                        Light-Induced
+                                        Activation of the LOV2 Domains in Various Phototropins[J]. Biochemistry, 2009,
+                                        48(32):7621-7628.
+                                        <br>
+                                        [3] Konold P E , Mathes T , Weissenborn J , et al. Unfolding of the C-Terminal
+                                        Jα Helix
+                                        in the
+                                        LOV2
+                                        Photoreceptor Domain Observed by Time-Resolved Vibrational Spectroscopy[J].
+                                        Journal of
+                                        Physical
+                                        Chemistry Letters, 2016:3472-3476. <br>
+                                        [4]Chennubhotla, Chakra, Bahar, et al. Correction: Signal Propagation in
+                                        Proteins and
+                                        Relation
+                                        to
+                                        Equilibrium Fluctuations.[J]. Plos Computational Biology, 2007. <br>
+                                        [5] Bai L , Mu L , Qiao L , et al. Protein folding optimization based on 3D
+                                        off-lattice
+                                        model
+                                        via an
+                                        improved artificial bee colony algorithm[J]. Journal of Molecular Modeling,
+                                        2015,
+                                        21(10):1-15.
+                                        <br>
+                                        [6] Jumper, J., Evans, R., Pritzel, A. et al. Highly accurate protein structure
+                                        prediction with
+                                        AlphaFold. Nature 596, 583–589 (2021).
+                                        https://doi.org/10.1038/s41586-021-03819-2 <br>
+                                        [7] Liu Xinze. Research on Dynamic Simulation of Gas Leakage and Auxiliary
+                                        Decision
+                                        Technology[J]. Fire
+                                        Science and Technology, 39(4):5.
+                                    </p> <br>
+        </div>
+    </section>
+    <!-- content end! -->
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_l">
+                <div class="footer_l1">contact us</div>
+                <div class="footer_l2">
+                    Contact: 400-88888888<br />
+                    Email: 1304998294@qq.com<br />
+                    Address: South of Daxing Gaomidian, Fengtai District, Beijing
+                </div>
+            </div>
+            <div class="footer_r">
+                <div class="footer_r1"><a href="#" title="">Home</a><span class="style1">|</span><a href="#"
+                        title="">Project</a><span class="style1">|</span><a href="#" title="">Lab</a><span
+                        class="style1">|</span><a href="#" title="">Awards</a><span class="style1">|</span><a href="#"
+                        title="">Human</a><span class="style1">|</span><a href="#" title="">Practices</a><span
+                        class="style1">|</span><a href="#" title="">Parts</a><span class="style1">|</span><a href="#"
+                        title="">Team</a></div>
+                <div class="footer_r2"><img src="../images/logo2.png" alt=""></div>
+            </div>
+        </div>
+    </footer>
+    <!--footer end-->
+</body>
+<script src="../js/nav2.js"></script>
+<script src="../js/sideBar.js"></script>
+<script src="../mathjax.js"></script>
+
+</html>
