@@ -1,0 +1,45 @@
+/* 底部 */
+.footer {
+  width: 100%;
+  padding: 30px 0 36px;
+  background-color: #6895c9;
+}
+.footer .container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.footer_l {
+}
+.footer_l1 {
+  font-size: 24px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.footer_l2 {
+  font-size: 18px;
+  color: #fff;
+  line-height: 36px;
+  margin-top: 10px;
+}
+.footer_r {
+}
+.footer_r1 {
+  font-size: 16px;
+  color: #fff;
+}
+.footer_r1 span.style1 {
+  margin: 0 28px;
+}
+.footer_r1 a {
+  color: #fff;
+}
+.footer_r1 a:hover {
+  text-decoration: underline;
+}
+.footer_r2 {
+  font-size: 0px;
+  text-align: right;
+  margin-top: 30px;
+}

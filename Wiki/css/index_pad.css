@@ -1,0 +1,643 @@
+@charset "utf-8";
+/* 以3.54位px 倍数，等比例缩小转换为rem */
+@media screen and (max-width: 1400px) {
+  :hover {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+  /*图片放大公用类*/
+  .picfd img {
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+  }
+  .picfd:hover img {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+  }
+
+  html,
+  body {
+    min-width: 100%;
+  }
+
+  .container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  /* 图片自适应 */
+  img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+    /* ie8 */
+    -ms-interpolation-mode: bicubic;
+    /*为了照顾ie图片缩放失真*/
+    border: none;
+  }
+
+  .padding1 {
+    padding-top: 0px;
+  }
+
+  /* 头部 */
+
+  /* 内页banner */
+  .qy_banner {
+    width: 100%;
+  }
+  .qy_banner .item {
+    width: 100%;
+    height: 3.466667rem;
+    display: block;
+  }
+
+  /* 面包屑 */
+  .crumb {
+    width: 100%;
+    padding: 0.142933rem 0;
+    background-color: #f9fafb;
+  }
+  .crumb_nr {
+    font-size: 0.120507rem;
+    color: #8e8e8e;
+    line-height: 0.188267rem;
+    padding-left: 0.263467rem;
+    background: url('https://2021.igem.org/wiki/images/3/32/T--FAFU-CHINA--pic4.png') no-repeat left top;
+  }
+  .crumb_nr a {
+    color: #8e8e8e;
+  }
+  .crumb_nr a:hover {
+    color: #8a6faf;
+  }
+  .crumb_nr span.style1 {
+    color: #8a6faf;
+  }
+
+  /* 内页公用 */
+  .qy_main {
+    width: 100%;
+    padding: 0.301333rem 0 0.451733rem;
+    overflow: hidden;
+  }
+  .qy_main_l {
+    width: 2.7344rem;
+  }
+  .qy_main_l h2 {
+    font-size: 0.391707rem;
+    font-weight: bold;
+    color: #fff;
+    line-height: 1.205253rem;
+    padding: 0 0.225867rem;
+    background-color: #8a6faf;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .qy_main_l ul {
+    padding-top: 0.0752rem;
+  }
+  .qy_main_l ul li {
+    margin-top: 0.0752rem;
+  }
+  .qy_main_l ul li a {
+    font-size: 0.210907rem;
+    color: #868686;
+    line-height: 0.677867rem;
+    padding: 0 0.225867rem 0 0.1504rem;
+    background-color: #fff;
+    border-left-width: 0.173067rem;
+    border-left-style: solid;
+    border-left-color: #dadada;
+    display: block;
+    -webkit-box-shadow: 2px 2px 18px rgba(23, 24, 25, 0.11);
+    -moz-box-shadow: 2px 2px 18px rgba(23, 24, 25, 0.11);
+    box-shadow: 2px 2px 18px rgba(23, 24, 25, 0.11);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .qy_main_l ul li a:hover,
+  .qy_main_l ul li a.on {
+    color: #8a6faf;
+    border-left-color: #8a6faf;
+  }
+  .qy_main_r {
+    width: 997px;
+  }
+  .qy_main_r1 {
+    font-size: 0.210907rem;
+    font-weight: bold;
+    color: #8a6faf;
+    line-height: 0.210667rem;
+    text-transform: uppercase;
+    padding: 0 0 0.0752rem 0.128rem;
+    background: url('https://2021.igem.org/wiki/images/9/9b/T--FAFU-CHINA--pic5.png') no-repeat left top;
+    border-bottom: 0.0224rem solid #e5e5e5;
+    word-break: break-all;
+  }
+  .qy_main_r2 {
+    width: 100%;
+  }
+  .qy_main_r2 ul {
+    width: 100%;
+    margin-top: -0.120267rem;
+  }
+  .qy_main_r2 ul li {
+    width: 100%;
+    margin-top: 0.3464rem;
+  }
+  .qy_main_r2 ul li .title {
+    width: 100%;
+  }
+  .qy_main_r2 ul li .title span.style1 {
+    font-size: 0.135573rem;
+    color: #8a6faf;
+    line-height: 0.353867rem;
+    padding: 0 0.0752rem;
+    background-color: #bbddd8;
+    display: inline-block;
+  }
+  .qy_main_r2 ul li .content {
+    font-size: 0.135573rem;
+    color: #666469;
+    width: 100%;
+    line-height: 0.270933rem;
+    margin-top: 0.1504rem;
+  }
+
+  /* banner */
+  .banner {
+    width: 100%;
+    margin-bottom: -0.866133rem;
+  }
+  .swiper1 {
+    width: 100%;
+    height: 6.545867rem;
+  }
+  .swiper-wrapper {
+    width: 100%;
+  }
+  .swiper1 .item {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  .swiper1 .swiper-slide .item {
+    width: 100%;
+    display: block;
+    /* transition: 1s linear 2s;
+	transform: scale(1, 1); */
+  }
+  /* .swiper1 .swiper-slide-active .item, .swiper1 .swiper-slide-duplicate-active .item {
+	transition: 6s linear;
+	transform: scale(1.1, 1.1);
+} */
+  .swiper1 .swiper-button-next,
+  .swiper1 .swiper-button-prev {
+    position: absolute;
+    top: auto;
+    bottom: 1.182667rem;
+    width: 0.497067rem;
+    height: 0.497067rem;
+    /* margin-top: -40px; */
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .swiper1 .swiper-button-prev {
+    background: url('https://2021.igem.org/wiki/images/1/17/T--FAFU-CHINA--pic6.png') no-repeat center;
+    left: .603733rem !important;
+  }
+  .swiper1 .swiper-button-next {
+    background: url('https://2021.igem.org/wiki/images/5/57/T--FAFU-CHINA--pic7.png') no-repeat center;
+    left: 1.5584rem !important;
+  }
+  .swiper1 .swiper-button-prev:hover {
+    background: url('https://2021.igem.org/wiki/images/0/01/T--FAFU-CHINA--pic8.png') no-repeat center;
+  }
+  .swiper1 .swiper-button-next:hover {
+    background: url('https://2021.igem.org/wiki/images/0/04/T--FAFU-CHINA--pic9.png') no-repeat center;
+  }
+  .swiper1 .swiper-button-next:after,
+  .swiper1 .swiper-button-prev:after {
+    content: '';
+  }
+  .swiper1 .swiper-pagination {
+    font-size: 0px;
+    width: 0.1656rem;
+    bottom: auto;
+    left: auto;
+    right: 0.376533rem;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+  }
+  .swiper1 .swiper-pagination-bullet {
+    width: 0.1656rem;
+    height: 0.1656rem;
+    margin: 0.045067rem 0px !important;
+    display: inline-block;
+    background: url('https://2021.igem.org/wiki/images/4/48/T--FAFU-CHINA--pic3.png') no-repeat center;
+    opacity: 1;
+  }
+  .swiper1 .swiper-pagination-bullet-active {
+    background: url(../images/pic3h.png) no-repeat center;
+  }
+
+  /* 首页 */
+  .main {
+    width: 100%;
+    overflow: hidden;
+  }
+  .main h2 {
+    font-size: 0.271173rem;
+    color: #454948;
+    width: 100%;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .main .more {
+    width: 100%;
+  }
+  .main .more a {
+    font-size: 0.15064rem;
+    color: #fff;
+    width: 2.093333rem;
+    height: 0.572267rem;
+    line-height: 0.572267rem;
+    text-align: center;
+    background-color: #badcd7;
+    border-radius: 0.572267rem;
+    text-transform: uppercase;
+    display: inline-block;
+  }
+  .main .more a img {
+    width: 0.225867rem;
+    height: 0.225867rem;
+    vertical-align: middle;
+    margin-left: 0.0752rem;
+    position: relative;
+    top: -0.022587rem;
+    transition: all 0.2s ease-in-out;
+  }
+  .main .more a:hover img {
+    transform: translateX(0.0752rem);
+  }
+
+  .main1 {
+    width: 100%;
+  }
+  .main1 video {
+    width: 100%;
+    display: block;
+  }
+
+  .main2 {
+    width: 100%;
+    padding: 0.248533rem 0 1.092267rem;
+    background: url('https://2021.igem.org/wiki/images/7/73/T--FAFU-CHINA--pic14.png') no-repeat left 600px bottom;
+  }
+  .main2 .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0.533333rem;
+  }
+  .main2 .text {
+    width: 3.881333rem;
+  }
+  .main2 .text1 {
+    font-size: 0.231173rem;
+    color: #444;
+    width: 100%;
+    line-height: 0.542133rem;
+    margin: 1.657067rem 0 0.557333rem;
+  }
+  .main2 .more {
+    margin-left: 0px;
+  }
+  .main2 .pic {
+    box-sizing: border-box;
+    width: 5.664533rem;
+    height: 6.124267rem;
+    position: relative;
+  }
+  .main2 .pic1 {
+    width: 3.045067rem;
+    height: 3.045067rem;
+    border-radius: 3.045067rem;
+    overflow: hidden;
+    position: absolute;
+    top: 0.9rem;
+    right: 0.7rem;
+  }
+  .main2 .pic1 img {
+    width: 3.045067rem;
+    height: 3.045067rem;
+  }
+  .main2 .pic1 img {
+    animation: qimg_scale 10s infinite linear;
+    -moz-animation: qimg_scale 10s infinite linear; /* Firefox */
+    -webkit-animation: qimg_scale 10s infinite linear; /* Safari and Chrome */
+    -o-animation: qimg_scale 10s infinite linear; /* Opera */
+  }
+
+  @keyframes qimg_scale {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .main2 .pic2 {
+    width: 0.768267rem;
+    height: 0.768267rem;
+    padding: 0.142933rem;
+    background-color: #badcd7;
+    border-radius: 0.768267rem;
+    overflow: hidden;
+    position: absolute;
+  }
+  .main2 .pic2 img {
+    width: 0.768267rem;
+    height: 0.768267rem; 
+  }
+  .main2 .pic2 img {
+    animation: qimg_rotate 6s infinite linear;
+    -moz-animation: qimg_rotate 6s infinite linear; /* Firefox */
+    -webkit-animation: qimg_rotate 6s infinite linear; /* Safari and Chrome */
+    -o-animation: qimg_rotate 6s infinite linear; /* Opera */
+  }
+
+  @keyframes qimg_rotate {
+    0% {
+      transform: rotate(-30deg);
+    }
+    50% {
+      transform: rotate(30deg);
+    }
+    100% {
+      transform: rotate(-30deg);
+    }
+  }
+
+  .main2 .pic2.style1 {
+    top: 0px;
+    left: 0.4896rem;
+  }
+  .main2 .pic2.style2 {
+    top: 1.3784rem;
+    left: 0px;
+  }
+  .main2 .pic2.style3 {
+    top: 2.892533rem;
+    left: 0.030107rem;
+  }
+  .main2 .pic2.style4 {
+    top: 4.014933rem;
+    left: 0.821067rem;
+  }
+  .main2 .pic2.style5 {
+    top: 4.911467rem;
+    left: 2.064rem;
+  }
+  .main2 .pic2.style6 {
+    top: 5.0696rem;
+    left: 3.487733rem;
+  }
+
+  .main3 {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    height: 6.259733rem;
+  }
+  .main3 .text {
+    width: 100%;
+  }
+  .main3 .text1 {
+    font-size: 0.271173rem;
+    color: #fff;
+    width: 100%;
+    line-height: 0.542133rem;
+    margin: 0 0 0.361573rem;
+    padding-left: 0.533333rem;
+  }
+  .main3 .more {
+    margin-left: 0.533333rem;
+  }
+
+  .main4 {
+    width: 100%;
+    height: 5.318133rem;
+    margin-top: 0.9792rem;
+  }
+  .main4 .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .main4 .text {
+    width: 5.1976rem;
+    padding: 0.3312rem 0.301333rem 0.421867rem;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .main4 .text1 {
+    font-size: 0.180773rem;
+    color: #fff;
+    width: 100%;
+    line-height: 0.361573rem;
+    margin: 0px 0 0.225867rem;
+  }
+
+  .main5 {
+    width: 100%;
+    margin-top: 0.753067rem;
+  }
+  .main5_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.6024rem;
+  }
+  .main5 ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-left: 0.7rem;
+  }
+  .main5 ul li {
+    width: 1rem;
+    padding: 0.1504rem 0.0752rem 0px;
+  }
+  .main5 ul li .item {
+    width: 100%;
+    text-align: center;
+  }
+  .main5 ul li .item .pic {
+    width: 100%;
+  }
+  .main5 ul li .item .title {
+    font-size: 0.165707rem;
+    color: #000;
+    width: 100%;
+    margin-top: 0.572267rem;
+    text-transform: uppercase;
+  }
+  .main5 ul li .item:hover .title {
+    color: #8869ad;
+  }
+
+  .main6 {
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 0.903947rem;
+    padding: 0.903947rem 0;
+  }
+  .main6 .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main6 h2 {
+    color: #fff;
+  }
+  .main6_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.376533rem;
+  }
+
+  /* ~~~~~~~~~~~~~~~~~~~~~~~ */
+  .main6_1 ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .main6_1 ul li {
+    width: 2.1rem;
+    margin-left: 0.19rem;
+  }
+  .main6_1 ul li .item {
+    width: 2.1rem;
+    height: 1.220267rem;
+    background-color: #ebebeb;
+  }
+  .main6_1 ul li .item:hover {
+    background-color: #badcd7;
+  }
+  .main6_1 ul li .item .pic {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .main6_1 ul li .item .pic img {
+    width: 100%;
+    height: 100%;
+  }
+  .main6_1 ul li .item .text {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .main6_1 .lastImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.066667rem;
+    width: 0.1464rem;
+    height: 0.1464rem;
+  }
+  .main6_1 .lastImg img {
+    width: 100%;
+    height: 100%;
+  }
+  .main6_1 ul li .item div {
+    width: 0.533333rem;
+    height: 0.533333rem;
+  }
+  .main6_1 ul li .item .text .lastText {
+    font-size: 0.165707rem;
+    color: #999;
+    width: 100%;
+    /* margin-top: 0.266667rem; */
+    text-align: center;
+    padding-top: .2rem;
+  }
+
+  /* 引导页 */
+  .qguide {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .qguide .item {
+    width: 1.5064rem;
+  }
+  .qguide .item1 {
+    width: 100%;
+  }
+  .qguide .item1 img {
+    animation: qimg_rotate2 4s infinite linear;
+    -moz-animation: qimg_rotate2 4s infinite linear; /* Firefox */
+    -webkit-animation: qimg_rotate2 4s infinite linear; /* Safari and Chrome */
+    -o-animation: qimg_rotate2 4s infinite linear; /* Opera */
+  }
+
+  @keyframes qimg_rotate2 {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .qguide .item2 {
+    width: 100%;
+    margin-top: 0.19584rem;
+  }
+
+  body {
+    overflow: hidden;
+  }
+}
